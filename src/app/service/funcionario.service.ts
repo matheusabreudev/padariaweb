@@ -47,7 +47,8 @@ export class FuncionarioService {
       formData.append('usuario',usuario.usuario);
       formData.append('senha',usuario.senha);
       formData.append('email',usuario.email);
-      formData.append('roles',);
+      formData.append('roles',JSON.stringify(usuario.roles));
+      return formData;
   }
 
 
